@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the content */
+.container {
+    max-width: 900px; /* Increased width for better readability */
+    margin: auto;
+    background: #ffffff; /* White background for the content area */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #ff6347; /* Tomato color for the title */
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 20px; /* Space below the title */
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+/* Subheadings */
+h2 {
+    color: #4682b4; /* Steel blue for subheadings */
+    font-size: 1.8em; /* Font size for subheadings */
+    margin-top: 30px; /* Space above subheadings */
+    border-bottom: 2px solid #ff4500; /* Orange red underline */
+    padding-bottom: 10px; /* Space below the subheading */
+    animation: slideIn 0.5s ease-in-out; /* Slide-in effect */
+}
+
+/* Image styles */
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display for centering */
+    margin: 20px auto; /* Center images with margin */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Image hover effect */
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32cd32; /* Lime green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #228b22; /* Forest green on hover */
+    transform: translateY(-3px); /* Slightly lift button on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centered text */
+    margin-top: 40px; /* Space above footer */
+    color: #555; /* Dark gray color for footer text */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Spinner styles (optional) */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #32cd32; /* Lime green */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Spinner animation */
+    margin: 20px auto; /* Center spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
